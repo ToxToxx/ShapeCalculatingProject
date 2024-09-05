@@ -1,0 +1,15 @@
+Есть 3 таблицы:
+1. Products с полями ProductID, ProductName
+2. Categories с поляи CategoryID, CategoryName
+3. ProductCategories с полями ProductID, CategoryID
+
+Запрос: 
+SELECT 
+    p.ProductName,
+    c.CategoryName
+FROM 
+    Products p
+LEFT JOIN 
+    ProductCategories pc ON p.ProductID = pc.ProductID
+LEFT JOIN 
+    Categories c ON pc.CategoryID = c.CategoryID;
