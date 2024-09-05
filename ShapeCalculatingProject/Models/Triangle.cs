@@ -30,7 +30,7 @@ namespace ShapeCalculatingProject.Models
 
         public bool IsRightAngled()
         {
-            double[] sides = { TriangleSideA, TriangleSideB, TriangleSideC };
+            double[] sides = [TriangleSideA, TriangleSideB, TriangleSideC];
             Array.Sort(sides);
             return Math.Pow(sides[2],2) == Math.Pow(sides[0],2) + Math.Pow(sides[1],2);
         }
