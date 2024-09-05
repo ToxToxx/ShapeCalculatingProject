@@ -1,9 +1,9 @@
-Есть 3 таблицы:
-1. Products с полями ProductID, ProductName
-2. Categories с поляи CategoryID, CategoryName
-3. ProductCategories с полями ProductID, CategoryID
+3 TABLES :
+1. Products with ProductID, ProductName
+2. Categories with CategoryID, CategoryName
+3. ProductCategories with ProductID, CategoryID
 
-Запрос: 
+SQL: 
 SELECT 
     p.ProductName,
     c.CategoryName
